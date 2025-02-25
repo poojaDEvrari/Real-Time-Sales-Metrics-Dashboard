@@ -1,0 +1,551 @@
+/* Reset default styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f8;
+  color: #fefefe;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Common styles for icons */
+.icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+}
+.icon_header {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 26px;
+}
+.icon, .icon_header {
+  margin-right: 5px;
+}
+
+/* Close icon style */
+.close_icon {
+  color: red;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Grid container styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    'sidebar header header header'
+    'sidebar main main main';
+  height: 100vh;
+}
+
+/* Header styles */
+.header {
+  grid-area: header;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 0 30px;
+  box-shadow: 0 6px 7px -3px rgba(0, 0, 0, 0.35);
+}
+
+/* Styles for the menu icon in small screens */
+.menu-icon {
+  display: none;
+}
+
+/* Styles for search input in the header */
+.header-left input {
+  position: relative;
+  padding: 5px 0;
+  padding-left: 25px;
+  outline: none;
+  border: none;
+}
+
+/* Styles for search button in the header */
+.search-btn {
+  position: absolute;
+  padding: 4px;
+  z-index: 10;
+  top: 15px;
+  color: #7b7b7b;
+}
+
+/* Styles for right side of the header */
+.header-right > span {
+  color: #101010;
+}
+
+/* Sidebar styles */
+#sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: #5A32EA;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+/* Sidebar title styles */
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px 0px 30px;
+  margin-bottom: 30px;
+}
+
+/* Styles for small screens */
+.sidebar-title > span {
+  display: none;
+}
+
+/* Styles for the sidebar brand */
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Styles for the sidebar list */
+.sidebar-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Styles for sidebar list items */
+.sidebar-list-item {
+  padding: 20px 20px 20px 20px;
+  font-size: 18px;
+}
+
+/* Hover styles for sidebar list items */
+.sidebar-list-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+/* Styles for user login display */
+.user-login-display {
+  background-color: rgba(225, 130, 130, 0.279);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  margin: 10px;
+  border-radius: 4px;
+  margin-top: 150px;
+}
+
+/* Styles for sidebar list item links */
+.sidebar-list-item > a {
+  text-decoration: none;
+  color: #fefefe;
+}
+
+/* Styles for user login display image */
+.user-login-display img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Styles for employee name */
+.user-login-display .emp-name {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Styles for employee role */
+.user-login-display .emp-role {
+  padding: 0;
+  font-size: 10px;
+  color: #fff;
+  margin-top: -10px;
+}
+
+/* Styles for user and name */
+.user-and-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Responsive styles for small screens */
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+  z-index: 12 !important;
+}
+
+/* Main container styles */
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px 20px;
+}
+
+/* Styles for main title */
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Main cards styles */
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5rem;
+  margin: 15px 0;
+}
+
+/* Styles for individual cards */
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 25px 8px;
+  border-radius: 5px;
+}
+.card-icon {
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+
+/* Additional card styles for different backgrounds */
+.two {
+  background-image: linear-gradient(to top, #cfd9df 0%, #58a8d3 100%);
+}
+.three {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.four {
+  background-image: linear-gradient(70deg, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+/* Styles for card content */
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for card info text */
+.card-info {
+  text-align: left;
+  width: 100%;
+}
+
+/* Styles for first paragraph in card info */
+.card-info > p:first-child {
+  font-size: 10px;
+  margin-top: 15px;
+  color: #7b7b7b;
+}
+
+/* Styles for the second paragraph in card info */
+.card-info > p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: -8px;
+  color: #101010;
+}
+
+/* Styles for profit container */
+.profit-container {
+  width: 100%;
+  margin-top: -18px;
+}
+
+/* Styles for profit arrow icon */
+.profit-arrow {
+  color: #00a747;
+}
+
+/* Styles for loss arrow icon */
+.loss-arrow {
+  color: #ff0000;
+}
+
+/* Styles for profit percentage */
+.profit-percent {
+  color: #00a747;
+  font-size: 12px;
+}
+
+/* Styles for loss percentage */
+.loss-percent {
+  color: #ff0000;
+  font-size: 12px;
+}
+
+/* Styles for extra text in cards */
+.extra-text {
+  color: #000;
+  font-size: 12px;
+}
+
+/* Additional styles for card background */
+.card {
+  background-color: #ffffff;
+}
+
+/* Styles for card inner content */
+.card-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styles for card icons */
+.card_icon {
+  color: #00a747;
+}
+
+/* Styles for different inner badges */
+.inner-badge-two {
+  color: #ad26fe;
+}
+
+.inner-badge-three {
+  color: #0c5dc1;
+}
+
+.inner-badge-four {
+  color: #d60009;
+}
+
+/* Styles for charts section */
+.charts {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+/* Additional styles for the bar chart */
+.bar-chart {
+  width: 100% !important;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Styles for inner info section */
+.inner-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* Styles for the first info paragraph */
+.info-first {
+  color: #000;
+  font-weight: 600;
+}
+
+/* Styles for the second info paragraph */
+.info-sec {
+  font-size: 10px;
+  margin-top: -10px;
+  color: #7b7b7b;
+}
+
+/* Styles for the third info paragraph */
+.info-thr {
+  font-size: 12px;
+  color: #7b7b7b;
+}
+
+/* Styles for the bar chart container */
+.bar-style {
+  padding: 1rem;
+}
+
+/* Styles for the chart wrap */
+.chart-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Styles for the sales and inventory section */
+.sales-inventory {
+  background-color: #fefefe;
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: #101010;
+}
+
+/* Styles for sales header and right section */
+.sales-header, .sales-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+/* Styles for search input in sales header */
+.sale-search input {
+  border: none;
+  outline: none;
+}
+
+/* Styles for select input in sales right */
+.sale-filter select {
+  border: none;
+  outline: none;
+}
+
+/* Styles for products info section */
+.products-info {
+  padding: 10px;
+}
+
+/* Styles for the product table */
+.product-table {
+  width: 100%;
+  text-align: center;
+}
+
+/* Styles for product column headers */
+.product-column {
+  text-align: left;
+  font-size: 12px;
+  color: #7b7b7b;
+}
+
+/* Styles for product name and info section */
+.product-name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+/* Styles for product image in the table */
+.table-body img {
+  width: 80px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+/* Styles for table data cells */
+.table-body td {
+  text-align: left;
+}
+
+/* Styles for product title */
+.product-title {
+  font-weight: 600;
+}
+
+/* Styles for product tagline */
+.product-tagline {
+  font-size: 12px;
+  color: #7b7b7b;
+}
+
+/* Styles for stock and price */
+.stock {
+  font-size: 14px;
+}
+
+.price {
+  font-weight: 600;
+}
+
+/* Responsive styles for medium screens (<= 992px) */
+@media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'header'
+      'main';
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .menu-icon {
+    display: inline;
+  }
+
+  .sidebar-title > span {
+    display: inline;
+  }
+
+  .user-login-display {
+    margin-top: 2rem;
+  }
+}
+
+/* Responsive styles for small screens (<= 768px) */
+@media screen and (max-width: 768px) {
+  .main-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 0;
+  }
+  .menu-icon .icon {
+    color: #0c5dc1;
+  }
+  .info-sec {
+    color: #7b7b7b !important;
+  }
+
+  /* Additional responsive styles go here */
+}
+
+/* Responsive styles for extra small screens (<= 576px) */
+@media screen and (max-width: 576px) {
+  .main-container {
+    overflow-x: hidden;
+  }
+  .inner-info {
+    width: 98vw;
+  }
+  .charts {
+    width: 100vw;
+  }
+  .bar-chart {
+    width: 100vw;
+  }
+  .chart-wrap {
+    width: 100vw;
+  }
+  .header-right {
+    display: none;
+  }
+  .chats {
+    grid-template-columns: 1fr;
+  }
+  .product-name {
+    flex-wrap: wrap;
+  }
+  .sales-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sale-search {
+    display: flex;
+  }
+
+  /* Additional responsive styles go here */
+}
